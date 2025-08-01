@@ -17,11 +17,11 @@ elif choose_color in ["teal", "navy", "olive"]:
 else:
     category = "unknown"
 
-print("You chose the color " + choose_color + ".")
+print("You chose the color " + choose_color + ".") # Debug: Show chosen color
 choose_category = input("Enter the category: ").strip().lower()  # Get user category choice
-if category == "unknown":
-    print("The color " + choose_color + " is not in the list of known colors.")
-elif choose_category == category:
-    print("Correct! " + choose_color + " is a " + category + " color.")
-else:
-    print("Incorrect. " + choose_color + " is not a " + choose_category + " color.")
+if category == "unknown": # If the color is unknown
+    print("The color " + choose_color + " is not in the list of known colors.") # Debug: Show unknown color
+elif choose_category == category: # If the user's category matches the identified category
+    print("Correct! " + choose_color + " is a " + category + " color.") # Debug: Show correct category
+else: # If the user's category does not match the identified category
+    print("Incorrect. " + choose_color + " is not a " + choose_category + " color.") # Debug: Show incorrect category
