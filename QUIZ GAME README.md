@@ -30,8 +30,8 @@ If the color is unknown:
 ```
 Pick a color: indigo
 You chose the color indigo.
-Enter the category: tertiary
-The color indigo is not in the list of known colors.
+Checks the user's category guess.
+Displays "Error: Color not recognized"
 ```
 
 ---

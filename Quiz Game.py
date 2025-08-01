@@ -15,7 +15,8 @@ elif choose_color in ["brown", "gold", "silver"]:
 elif choose_color in ["teal", "navy", "olive"]:
     category = "earthy"
 else:
-    category = "unknown"
+    print("Error: Color not recognized")  # If the color is not recognized
+    exit()  # Exit the program if the color is not recognized
 
 print("You chose the color " + choose_color + ".") # Debug: Show chosen color
 choose_category = input("Enter the category: ").strip().lower()  # Get user category choice
